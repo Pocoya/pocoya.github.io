@@ -85,6 +85,17 @@ li.dropdown {
 /*------------------------------------------------------------------------------------*/
 .mySlides {display:none;}
 
+
+.clock {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
 /*------------------------------------------------------------------------------------*/
 /* videos and text/
 /*------------------------------------------------------------------------------------*/
