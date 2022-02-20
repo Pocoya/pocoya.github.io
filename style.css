@@ -211,11 +211,11 @@ h1{
 }
 .explore p{
     position: absolute;
-    right: 2%;
-    top: 4vh;;
+    right: -13vh;
+    top: 4vh;
 }
 .explore h4{
     position: absolute;
-    top: 1vh;
-    right: 40vh;
+    top: 2vh;
+    right: 22vh;
 }
