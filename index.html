@@ -5,23 +5,27 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title> Study Zone </title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 <div class="hero">
     <div class="navbar">
         <img src="images/myLogo.png" class="logo">
-        <nav>
+        <nav class="nav" id="nav">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">CONTACT</a></li>
                 <li><a href="">ABOUT</a></li>
             </ul>
         </nav>
+        <i class="fa fa-bars" onclick="showMenu()"></i></i>
     </div>
     <div class="content">
         <p>Welcome to </p>
         <h1>Study Zone</h1>
-        <a href="#explore"><button type="button"><span></span>Explore</button></a>
+        <a href="#course"><button type="button"><span></span>Explore</button></a>
     </div>
 
     <div class="social-icons">
@@ -29,40 +33,6 @@
         <a href="https://www.linkedin.com/in/morteza-rezaei-899b47220/"><img src="images/linkedin.png"></a>
         <a href=""><img src="images/ff.png"></a>
     </div>
-</div>
-
-<div class="explore" id="explore">
-
-    <h4>Explore the website</h4>
-    <fieldset>
-        <legend><img src="images/study.jpeg"></legend>
-    </fieldset>
-
-    <p><br>Researchers believe that your motivation to study can either come <br>
-        from inside you or outside of you. You can be motivated by an internal <br>
-        drive to learn as much possible. Or, you might be motivated to study <br>
-        by an external reward like a good grade, or a great job, or someone <br>
-        promising you a car. Recently, researchers have discovered that your <br>
-        motivation to study is rooted in lots of factors, many of which we have <br>
-        control over. Rory Lazowski of James Madison University and Chris Hulleman <br>
-        of the University of Virginia analyzed more than 70 studies into what <br>
-        motivates students in schools. They published their paper, “Motivation <br>
-        Interventions in Education: A Meta-Analytic Review, in the journal Review <br>
-        of Educational Research. Lazowski and Hulleman found that a number of ways<br>
-        to improve motivation consistently yield positive results. Here, I describe<br>
-        seven of the techniques that you can most readily use on your own to power<br>
-        through your own study barriers, and move your learning forward. <br>
-        You may think to yourself, “My goal is to graduate and get a good job and <br>
-        be rich.” While that's a fine ambition, by itself it probably won't help <br>
-        you in school day-to-day. In order to improve your motivation to study, <br>
-        your goals have to be a little closer to home. In fact, setting clear <br>
-        academic goals has been scientifically linked to higher grade point averages <br>
-        than students who set vague goals, like, “I'll just do the best I can.” <br>
-        Set a goal to earn an “A” on a particular test in a particular subject. Or, <br>
-        decide to learn everything you can about a concept because it will help you<br>
-        in the real world. Set a deadline for homework that will force you to finish<br>
-        a task before it is due so you can review it before handing it in. Whatever<br>
-        the goal is, be sure it is specific, relevant, and timely. </p><br>
 </div>
 
 <div class="bubbles">
@@ -74,6 +44,69 @@
     <img src="images/bubble.png">
     <img src="images/bubble.png">
 </div>
+<!--------another page-------------------------------->
 
+<section class="course" id="course">
+    <h1>Helpful Tips for Effective Studying</h1>
+    <p>Studying is essential if you want to perform well
+        in school and pass important tests. While we all recognize
+        the importance of studying, sometimes it can be difficult
+        to put effective study methods into practice. This is a
+        universal problem among students and test-takers. As an
+        expert in test preparation, we are here to share some
+        beneficial study tips that can help you develop a strong
+        foundation to perform well on your exams.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Tip 1</h3>
+            <p>An easy way to ensure that your shorter study
+                sessions remain concise and effective is to have
+                a specific study goal. Instead of overloading your
+                brain with a large variety of information, it is
+                better to focus on learning a specific concept.
+                This helps to improve retention and confidence in
+                that particular subject. It is also important to
+                reward yourself when you complete these goals!
+                Allow yourself to take a break, spend time with
+                friends or treat yourself to a snack. </p>
+        </div>
+        <div class="course-col">
+            <h3>Tip 2</h3>
+            <p>Another way to better understand the topics
+                you're studying is to teach them to others.
+                Explaining a concept aloud will strengthen your
+                understanding of that concept and your ability
+                to recall the details. While this is a great
+                exercise to do with fellow classmates and friends,
+                you can also teach to an imaginary audience. It
+                doesn't matter who you explain the material to, as
+                long as you have the ability to explain it. </p>
+        </div>
+        <div class="course-col">
+            <h3>Tip 3</h3>
+            <p>In order to help with neural retention, it is
+                beneficial to find your “special” study place. Try
+                to find a quiet space where you can be alone and
+                focus on studying without distractions. Whether it's
+                the library, a coffee shop, your room or elsewhere,
+                keep track of which locations inspire the most
+                productivity. Once you've established these locations
+                as designated study spaces, your brain will register
+                that it's time to focus and become more receptive to
+                new information. </p>
+        </div>
+    </div>
+</section>
+<!--------Javascript-------------------------------->
+<script>
+    var navLinks = document.getElementById("nav");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 </body>
 </html>
