@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> About Me </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="about-page">
+    <div class="navbar">
+        <img src="images/myLogo.png" class="logo">
+        <nav class="nav" id="nav">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </nav>
+        <i class="fa fa-bars" onclick="showMenu()"></i></i>
+    </div>
+    <h1>About Me</h1>
+</div>
+
+<div class="bubbles">
+    <img src="images/drop.png">
+    <img src="images/drop.png">
+    <img src="images/drop.png">
+    <img src="images/drop.png">
+    <img src="images/drop.png">
+    <img src="images/drop.png">
+    <img src="images/drop.png">
+</div>
+<!--------another page-------------------------------->
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <h1>Drama at my drama class</h1>
+            <p>One time my drama class's
+            teacher had gone home sick so we were just put in a 
+            classroom with a movie to entertain us for the period 
+            when an alarm went off. None of us were sure if it was 
+            the fire alarm or the lockdown alarm, so we all head out 
+            into the hall to check and no one's out there, so we 
+            head back in and climb under our desks as is lockdown 
+            procedure. Cut to an hour or so later when a teacher 
+            bursts in and nearly dies of relief because the school 
+            was on fire and we were the only students not accounted 
+            for and half the faculty and fire department had been 
+            searching for us for ages. Literally, the whole school 
+            had filled with smoke while we'd kept super safe under 
+            our wooden desks. </p>
+
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpeg">
+        </div>
+    </div>
+</section>
+
+<!--------Javascript-------------------------------->
+<script>
+    var navLinks = document.getElementById("nav");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

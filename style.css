@@ -332,3 +332,63 @@ h3{
         opacity: 1;
     }
 }
+
+/* about page */
+
+.about-page{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/me.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about-page h1{
+    margin-top: 100px;
+}
+
+.about-me{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 40%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.about-col p, .about-col h1{
+    flex-basis: 31%;
+    background: #FFFACD;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.btn {
+    border: 1px solid rgb(19, 136, 19);
+    background-color: #FFE4C4;
+    color: #094077;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00CED1;
+}
