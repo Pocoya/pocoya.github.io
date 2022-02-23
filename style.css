@@ -102,7 +102,7 @@ button:hover{
     background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
-    animation: back 35s linear infinite;
+    animation: back 30s linear infinite;
 }
 @keyframes back {
     100%{
@@ -124,7 +124,7 @@ button:hover{
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: 0;
+    top: -75px;
 }
 @keyframes bubble {
     0% {
@@ -138,19 +138,21 @@ button:hover{
         opacity: 1;
     }
     100% {
-        transform: translateY(-80vh);
+        transform: translateY(80vh);
         opacity: 0;
     }
 }
 .bubbles img:nth-child(1){
     animation-delay: 2s;
-    width: 25px;
+    width: 22px;
 }
 .bubbles img:nth-child(2){
     animation-delay: 1s;
+    width: 22px;
 }
 .bubbles img:nth-child(3){
     animation-delay: 3s;
+    width: 16px;
 }
 .bubbles img:nth-child(4){
     animation-delay: 4.5s;
@@ -158,10 +160,11 @@ button:hover{
 }
 .bubbles img:nth-child(5){
     animation-delay: 2.5s;
+    width: 22px;
 }
 .bubbles img:nth-child(6){
     animation-delay: 5s;
-    width: 35px;
+    width: 18px;
 }
 .bubbles img:nth-child(7){
     animation-delay: 8s;
@@ -195,6 +198,11 @@ nav .fa{
 @media(max-width: 700px){
     html{
         scroll-behavior: smooth;
+    }
+    button{
+        padding: 10px 25px;
+        position: absolute;
+        top: 80%;
     }
     .content{
         position: absolute;
@@ -244,6 +252,15 @@ nav .fa{
     nav ul li{
         display: block;
         margin: 15px 12px 26px;
+    }
+    .social-media{
+        position: absolute;
+        right: 2%;
+        bottom: 5%;
+    }
+    .bubbles{
+        position: absolute;
+        top: -100px;
     }
 }
 
